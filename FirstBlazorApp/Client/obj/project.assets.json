@@ -1572,23 +1572,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {},
+    "C:\\Users\\VSINGH\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Client\\FirstBlazorApp.Client.csproj",
+      "projectUniqueName": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Client\\FirstBlazorApp.Client.csproj",
       "projectName": "FirstBlazorApp.Client",
-      "projectPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Client\\FirstBlazorApp.Client.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Client\\obj\\",
+      "projectPath": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Client\\FirstBlazorApp.Client.csproj",
+      "packagesPath": "C:\\Users\\VSINGH\\.nuget\\packages\\",
+      "outputPath": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VSINGH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1602,8 +1602,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj": {
-              "projectPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj"
+            "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj": {
+              "projectPath": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj"
             }
           }
         }
@@ -1641,7 +1641,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.4, 6.0.4]"
+            "version": "[6.0.6, 6.0.6]"
           }
         ],
         "frameworkReferences": {
@@ -1649,7 +1649,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

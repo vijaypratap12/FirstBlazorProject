@@ -8,7 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+//IServiceCollection serviceCollection = builder.Services.AddSingleton<IConfiguration>(Microsoft.Extensions.Configuration);
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
+builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
+
 
 var app = builder.Build();
 

@@ -41,7 +41,6 @@ namespace FirstBlazorApp.Server.Controllers
         [HttpPost, Route("AddUpdateProduct")]
         public async Task<IActionResult> AddProduct(Products products)
         {
-            HttpResponseMessage response = new HttpResponseMessage();
             var res = await _product.AddProduct(products);
             try
             {
@@ -56,6 +55,25 @@ namespace FirstBlazorApp.Server.Controllers
                 return BadRequest(new { error = $"{ex.Message} {ex.InnerException} {ex.StackTrace}" });
             }
            
+        }
+
+        [HttpPost, Route("DeleteProduct")]
+        public async Task<IActionResult> DeleteProduct(Int64 productId)
+        {
+            var res = await _product.DeleteProduct(productId);
+            try
+            {
+                if (res == null)
+                {
+                    return BadRequest(new { error = "Invalid request." });
+                }
+                return Ok(res);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new { error = $"{ex.Message} {ex.InnerException} {ex.StackTrace}" });
+            }
+            
         }
 
        

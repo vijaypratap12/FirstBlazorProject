@@ -1,6 +1,12 @@
-﻿@using FirstBlazorApp.Server.Model
+﻿@page "/getproducts"
+@using FirstBlazorApp.Server.Model
 @inject HttpClient Http
-<h3>GetProducts</h3>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<h3>Get Products</h3>
 
 <p>This component demonstrates fetching data from the server.</p>
 
@@ -10,12 +16,17 @@
 }
 else
 {
+    
     <table class="table">
         <thead>
             <tr>
                 <th>ProductId</th>
                 <th>ProductName</th>
                 <th>Summary</th>
+                <th>IsActive</th>
+                <th>IsDeleted</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +36,10 @@ else
                     <td>@item.ProductId</td>
                     <td>@item.ProductName</td>
                     <td>@item.Description</td>
+                    <td>@item.IsActive</td>
+                    <td>@item.IsDelete</td>
+                    <td href="" class="bg-primary"><i class="fa fa-pen"></i></td>
+                    <td href="" class="bg-danger"><i class="fa fa-trash"></i></td>
                 </tr>
             }
         </tbody>
@@ -32,11 +47,12 @@ else
 }
 
 @code {
-    private List<Products> products;
+    public List<Products> products { get; set; } = new List<Products>();
 
     protected override async Task OnInitializedAsync()
     {
-        products = await Http.GetFromJsonAsync<List<Products>>("product/getproducts");
+         products = await Http.GetFromJsonAsync<List<Products>>("product/getproducts");
+       
     }
 
 }

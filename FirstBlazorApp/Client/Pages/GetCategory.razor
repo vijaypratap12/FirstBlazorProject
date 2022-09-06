@@ -1,0 +1,52 @@
+﻿@page "/getcategory"
+@using FirstBlazorApp.Shared
+@inject HttpClient Http
+
+<h3>Categories</h3>
+
+@if (category == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>CategoryId</th>
+                <th>CategoryName</th>
+                <th>Summary</th>
+                <th>IsActive</th>
+                <th>IsDeleted</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in category)
+            {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td>@item.Description</td>
+                    <td>@item.IsActive</td>
+                    <td>@item.IsDelete</td>
+                    <td href="" class="bg-primary"><i class="fa fa-pen"></i></td>
+                    <td href="" class="bg-danger"><i class="fa fa-trash"></i></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    public List<Category> category { get; set; } = new List<Category>();
+
+    protected override async Task OnInitializedAsync()
+    {
+         category = await Http.GetFromJsonAsync<List<Category>>("category/getcategory");
+       
+    }
+
+}

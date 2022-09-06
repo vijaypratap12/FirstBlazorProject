@@ -22,3 +22,15 @@ D:\Blazor\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorA
 D:\Blazor\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\refint\FirstBlazorApp.Shared.dll
 D:\Blazor\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.pdb
 D:\Blazor\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\ref\FirstBlazorApp.Shared.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\bin\Debug\net6.0\FirstBlazorApp.Shared.deps.json
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\bin\Debug\net6.0\FirstBlazorApp.Shared.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\bin\Debug\net6.0\FirstBlazorApp.Shared.pdb
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.csproj.AssemblyReference.cache
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.AssemblyInfoInputs.cache
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.AssemblyInfo.cs
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.csproj.CoreCompileInputs.cache
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\refint\FirstBlazorApp.Shared.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\FirstBlazorApp.Shared.pdb
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Shared\obj\Debug\net6.0\ref\FirstBlazorApp.Shared.dll

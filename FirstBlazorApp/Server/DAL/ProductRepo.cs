@@ -17,13 +17,16 @@ namespace FirstBlazorApp.Server.DAL
         {
             _config = configuration;
             _connectionString = _config.GetConnectionString("DefaultConn");
+            
         }
+
+        string connString = "Server=MCNDESKTOP40; Database = Test; User ID = sa; Password = Password$2";
         public async Task<IEnumerable<Products>> GetProduct()
         {
             IEnumerable<Products> product = null;
             try
             {
-                using(var connection = new SqlConnection("Server=DESKTOP-UPVU5MD\\SQLEXPRESS; Database = test; User ID = sa; Password = Vijay@123"))
+                using(var connection = new SqlConnection(connString))
                 {
                     var procedure = "[GetProductDetails]";
                    
@@ -43,9 +46,9 @@ namespace FirstBlazorApp.Server.DAL
             int statusid = 0;
             try
             {
-                using (var connection = new SqlConnection("Server=DESKTOP-UPVU5MD\\SQLEXPRESS; Database = test; User ID = sa; Password = Vijay@123"))
+                using (var connection = new SqlConnection(connString))
                 {
-                    var procedure = "[AddProduct]";
+                    var procedure = "[AddUpdateProduct]";
                     var values = new
                     {
                         Id        = products.Id,
@@ -63,6 +66,32 @@ namespace FirstBlazorApp.Server.DAL
 
             }
             return statusid;
+        }
+
+        public async Task<int> DeleteProduct(Int64 productId)
+        {
+            int statusid = 0;
+            try
+            {
+                using (var connection = new SqlConnection(connString))
+                {
+                    var procedure = "[DeleteProduct]";
+                    var values = new
+                    {
+                     
+                        ProductId = productId
+                    };
+
+                    statusid = await connection.QueryFirstOrDefaultAsync<int>(procedure, values, commandType: CommandType.StoredProcedure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return statusid;
+
         }
 
     }

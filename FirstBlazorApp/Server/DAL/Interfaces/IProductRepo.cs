@@ -7,5 +7,6 @@ namespace FirstBlazorApp.Server.DAL.Interfaces
     {
         Task<IEnumerable<Products>> GetProduct();
         Task<int> AddProduct(Products products);
+        Task<int> DeleteProduct(Int64 productId);
     }
 }
