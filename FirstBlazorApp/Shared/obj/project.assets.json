@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\VSINGH\\.nuget\\packages\\": {},
+    "C:\\Users\\asus\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
+      "projectUniqueName": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
       "projectName": "FirstBlazorApp.Shared",
-      "projectPath": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
-      "packagesPath": "C:\\Users\\VSINGH\\.nuget\\packages\\",
-      "outputPath": "D:\\BlazorProjects\\FirstBlazorProject\\FirstBlazorApp\\Shared\\obj\\",
+      "projectPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\VSINGH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
