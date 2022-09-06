@@ -8,7 +8,14 @@ namespace FirstBlazorApp.Server.DAL
 {
     public class CategoryRepo:ICategoryRepo
     {
-        string connString = "Server=MCNDESKTOP40; Database = Test; User ID = sa; Password = Password$2";
+        private readonly string _connectionString;
+        private readonly IConfiguration _configuration;
+        public CategoryRepo(IConfiguration configuration)
+        {
+            _configuration = configuration;
+            _connectionString = _configuration.GetValue<string>("ConnectionString:DefaultConn");
+        }
+       
 
         public async Task<IEnumerable<Category>> GetCategory()
         {
@@ -16,7 +23,7 @@ namespace FirstBlazorApp.Server.DAL
             try
             {
                 var procedure = "[GetCategories]";
-                using(var connection = new SqlConnection(connString))
+                using(var connection = new SqlConnection(_connectionString))
                 {
                     category = await connection.QueryAsync<Category>(procedure, commandType: CommandType.StoredProcedure);
                 }
@@ -42,7 +49,7 @@ namespace FirstBlazorApp.Server.DAL
                 parameter.Add("@Description", category.Description, DbType.String, direction: ParameterDirection.Input);
                 parameter.Add("@StatusId", statusId, DbType.Int32, direction: ParameterDirection.Output);
 
-                using (var connection = new SqlConnection(connString))
+                using (var connection = new SqlConnection(_connectionString))
                 {
                   
                     statusId = await connection.QueryFirstOrDefaultAsync<int>(procedure, parameter, commandType: CommandType.StoredProcedure);

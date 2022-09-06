@@ -10,23 +10,24 @@ namespace FirstBlazorApp.Server.DAL
     public class ProductRepo : IProductRepo
     {
         private readonly string _connectionString;
-        private readonly IConfiguration _config;
+        private readonly IConfiguration _configuration;
        // private readonly ILogRepo _logRepo;
 
         public ProductRepo(IConfiguration configuration)
         {
-            _config = configuration;
-            _connectionString = _config.GetConnectionString("DefaultConn");
-            
-        }
+            _configuration = configuration;
+            _connectionString = _configuration.GetValue<string>("ConnectionString:DefaultConn");
 
-        string connString = "Server=MCNDESKTOP40; Database = Test; User ID = sa; Password = Password$2";
+        }
+        
+       // string connString = "Server=MCNDESKTOP40; Database = Test; User ID = sa; Password = Password$2";
         public async Task<IEnumerable<Products>> GetProduct()
         {
+            
             IEnumerable<Products> product = null;
             try
             {
-                using(var connection = new SqlConnection(connString))
+                using(var connection = new SqlConnection(_connectionString))
                 {
                     var procedure = "[GetProductDetails]";
                    
@@ -46,7 +47,7 @@ namespace FirstBlazorApp.Server.DAL
             int statusid = 0;
             try
             {
-                using (var connection = new SqlConnection(connString))
+                using (var connection = new SqlConnection(_connectionString))
                 {
                     var procedure = "[AddUpdateProduct]";
                     var values = new
@@ -73,7 +74,7 @@ namespace FirstBlazorApp.Server.DAL
             int statusid = 0;
             try
             {
-                using (var connection = new SqlConnection(connString))
+                using (var connection = new SqlConnection(_connectionString))
                 {
                     var procedure = "[DeleteProduct]";
                     var values = new
