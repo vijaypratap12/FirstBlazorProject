@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GWoCViF+BuKUUBqlw8Ybpi7YaWRbWoOlS29ksShslQQcth2/rBum9yJIpVyLI5IRsSiplCEt8fWx0IliDYQD+A==",
+  "dgSpecHash": "pTRSxEw06uEeK1E6B9IC0JjvipL475E0ttEv7n9do3b+nj3eYcXCK+Slzxnti6BqDYtxJLlqOh0No3efM4KLEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
+  "projectFilePath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

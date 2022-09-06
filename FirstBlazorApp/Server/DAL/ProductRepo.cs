@@ -48,6 +48,7 @@ namespace FirstBlazorApp.Server.DAL
                     var procedure = "[AddProduct]";
                     var values = new
                     {
+                        Id        = products.Id,
                         ProductId = products.ProductId,
                         ProductName = products.ProductName,
                         Description = products.Description

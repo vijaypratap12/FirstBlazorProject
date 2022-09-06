@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = FirstBlazorApp.Shared
-build_property.ProjectDir = C:\Users\asus\source\repos\FirstBlazorApp\FirstBlazorApp\Shared\
+build_property.ProjectDir = D:\Blazor\FirstBlazorProject\FirstBlazorApp\Shared\

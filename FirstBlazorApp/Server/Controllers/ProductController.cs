@@ -38,7 +38,7 @@ namespace FirstBlazorApp.Server.Controllers
             }
         }
 
-        [HttpPost, Route("AddProduct")]
+        [HttpPost, Route("AddUpdateProduct")]
         public async Task<IActionResult> AddProduct(Products products)
         {
             HttpResponseMessage response = new HttpResponseMessage();
@@ -57,5 +57,7 @@ namespace FirstBlazorApp.Server.Controllers
             }
            
         }
+
+       
     }
 }

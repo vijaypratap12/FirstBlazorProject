@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g5YzAqEhVh8JrlCCs1QyFNTWQKYi+S5Sel2Cmz57m8gR2zImZPIr+IpCf1uVvG8NCTLB9RdI0HM3V/4M6ZkLOQ==",
+  "dgSpecHash": "sarz6giCmyVFtm1sn0ELJe/VOQQnTc8I7QFV2MctaLRJ3BnbR2zrMokTxsdKebln6tEbNx7W0NXnQPigNTNnig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Server\\FirstBlazorApp.Server.csproj",
+  "projectFilePath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Server\\FirstBlazorApp.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.4\\microsoft.aspnetcore.authorization.6.0.4.nupkg.sha512",

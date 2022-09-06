@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj": {}
+    "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj": {
+    "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
+        "projectUniqueName": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
         "projectName": "FirstBlazorApp.Shared",
-        "projectPath": "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
+        "projectPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\FirstBlazorApp.Shared.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\source\\repos\\FirstBlazorApp\\FirstBlazorApp\\Shared\\obj\\",
+        "outputPath": "D:\\Blazor\\FirstBlazorProject\\FirstBlazorApp\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
