@@ -1,6 +1,7 @@
 ﻿using FirstBlazorApp.Server.DAL.Interfaces;
 using FirstBlazorApp.Server.Model;
 using FirstBlazorApp.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace FirstBlazorApp.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IProductRepo _product;

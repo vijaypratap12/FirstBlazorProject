@@ -3,6 +3,7 @@ using FirstBlazorApp.Server.DAL.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.IdentityModel.Tokens;
+using System.Net;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ builder.Services.AddRazorPages();
 //IServiceCollection serviceCollection = builder.Services.AddSingleton<IConfiguration>(Microsoft.Extensions.Configuration);
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
 builder.Services.AddScoped<ICategoryRepo, CategoryRepo>();
+builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -58,7 +60,15 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.Use(async (context, next) =>
+{
+    await next();
 
+    if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized)
+    {
+        await context.Response.WriteAsync("Token Validation Has Failed. Request Access Denied");
+    }
+});
 
 app.MapRazorPages();
 app.MapControllers();

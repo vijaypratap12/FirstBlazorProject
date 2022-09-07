@@ -16,17 +16,18 @@ namespace FirstBlazorApp.Server.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly IUserRepo _userRepo;
-        public UserController(IConfiguration configuration)
+        public UserController(IConfiguration configuration, IUserRepo userRepo)
         {
             _configuration = configuration;
+            _userRepo = userRepo;
+
         }
         [HttpPost, Route("Login")]
         [AllowAnonymous]
-        public IActionResult LoginUser(User user)
+        public async Task<IActionResult> LoginUser(User user)
         {
-            var users = _userRepo.GetUserDetail(user);
-            //if (user.UserName == "joydip" && user.Password == "joydip123")
-            if(users!=null)
+            var res = await _userRepo.GetUserDetail(user);
+            if(res!=null)
             {
                 var issuer = _configuration.GetValue<string>("Jwt:Issuer");
                 var audience = _configuration.GetValue<string>("Jwt:Audience");
