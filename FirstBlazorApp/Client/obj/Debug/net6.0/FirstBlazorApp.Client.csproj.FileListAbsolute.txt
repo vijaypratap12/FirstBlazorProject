@@ -2480,3 +2480,4 @@ D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Client\obj\Debug\net6.0\refi
 D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Client\obj\Debug\net6.0\FirstBlazorApp.Client.pdb
 D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Client\obj\Debug\net6.0\ref\FirstBlazorApp.Client.dll
 D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Client\bin\Debug\net6.0\libman.json
+D:\Blazor\FirstBlazorProject\FirstBlazorApp\Client\bin\Debug\net6.0\libman.json
