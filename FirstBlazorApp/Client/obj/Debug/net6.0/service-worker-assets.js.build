@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-lDAEEaul32OkTANWkZgjgs4sFCsMdLsR5NJxrjVcXdo=",
+      "hash": "sha256-lZsEnj82Qf29f9zapvCYrDCNjnnmp+lceSC1ZOF9NZY=",
       "url": "css\/app.css"
     },
     {
@@ -1037,11 +1037,11 @@
       "url": "_framework\/FirstBlazorApp.Shared.pdb"
     },
     {
-      "hash": "sha256-SAcqURgRfxh1z9CwNn21HIseAbqXlM346L5HdHD2pdM=",
+      "hash": "sha256-9xl\/TR5evC61xxfR8MwiKIMBax1LAwA4jKgIQz7Ewyw=",
       "url": "_framework\/FirstBlazorApp.Client.dll"
     },
     {
-      "hash": "sha256-kWXKN22yHtloCxJroiXpuvS7MN5deGOE7UG4IhJk\/p8=",
+      "hash": "sha256-wNoSRUe\/lXxF9opdgqYP+HHO+1t4856KAVwAnWKPTxI=",
       "url": "_framework\/FirstBlazorApp.Client.pdb"
     },
     {
@@ -1049,9 +1049,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-odbzAz57KyXe\/BQKc9dtIDGqv95AITlnOLVq3FMA5m4=",
+      "hash": "sha256-P6wdQssx1TttS+zCNFqsO5xIomBMqH1SQCpJaf\/6LY8=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "okoMybdx"
+  "version": "CHl2YhDd"
 };
