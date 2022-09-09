@@ -202,3 +202,11 @@ D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Micr
 D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\System.Web.Cors.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.Owin.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.Owin.Cors.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.Owin.Host.SystemWeb.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.Owin.Security.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Microsoft.Owin.Security.OAuth.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\BlazorProjects\FirstBlazorProject\FirstBlazorApp\Server\bin\Debug\net6.0\Owin.dll

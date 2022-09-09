@@ -27,7 +27,7 @@ namespace FirstBlazorApp.Server.Controllers
         public async Task<IActionResult> LoginUser(User user)
         {
             var res = await _userRepo.GetUserDetail(user);
-            if(res!=null)
+            if (res != null)
             {
                 var issuer = _configuration.GetValue<string>("Jwt:Issuer");
                 var audience = _configuration.GetValue<string>("Jwt:Audience");
