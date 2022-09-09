@@ -9,7 +9,7 @@ namespace FirstBlazorApp.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IProductRepo _product;

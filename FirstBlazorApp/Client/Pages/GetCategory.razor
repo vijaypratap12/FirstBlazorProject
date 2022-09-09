@@ -30,8 +30,16 @@ else
                     <td>@item.CategoryId</td>
                     <td>@item.CategoryName</td>
                     <td>@item.Description</td>
-                    <td>@item.IsActive</td>
-                    <td>@item.IsDelete</td>
+                   <td>
+                    <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="@item.IsActive" id="flexSwitchCheckChecked" checked />
+                     </div>
+                    </td>
+                    <td>
+                        <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="@item.IsDelete" id="flexSwitchCheckDefault"/>
+                     </div>
+                    </td>
                     <td href="" class="bg-primary"><i class="fa fa-pen"></i></td>
                     <td href="" class="bg-danger"><i class="fa fa-trash"></i></td>
                 </tr>

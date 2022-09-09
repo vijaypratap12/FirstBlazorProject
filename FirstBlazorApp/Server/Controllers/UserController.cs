@@ -24,7 +24,7 @@ namespace FirstBlazorApp.Server.Controllers
         }
         [HttpPost, Route("Login")]
         [AllowAnonymous]
-        public async Task<IActionResult> LoginUser(User user)
+        public async Task<TokenResponse> LoginUser(User user)
         {
             var res = await _userRepo.GetUserDetail(user);
             if (res != null)
@@ -53,9 +53,9 @@ namespace FirstBlazorApp.Server.Controllers
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 var jwtToken = tokenHandler.WriteToken(token);
                 var stringToken = tokenHandler.WriteToken(token);
-                return Ok(stringToken);
+                return new TokenResponse { Token = stringToken, RefreshToken=null, ExpiresIn = DateTime.Now.AddHours(3) };
             }
-            return Unauthorized();
+            return new TokenResponse { Token = null, RefreshToken = null, ExpiresIn = DateTime.Now };
         }
     }
 }
